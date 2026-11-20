@@ -1,0 +1,89 @@
+/* 頁面整體：純白背景 */
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.lang-overlay-clean {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 霓虹發光深色卡片框 */
+.lang-box {
+    background-color: #1E1E24;
+    border: 2px solid #00F0FF;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.5);
+    border-radius: 16px;
+    padding: 35px 25px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.lang-box h2 {
+    color: #00F0FF;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.lang-box p {
+    color: #E2E8F0;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.lang-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lang-btn {
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 繁體中文：霓虹藍按鈕 */
+.lang-btn.tw {
+    background-color: #0F172A;
+    color: #00F0FF;
+    border: 2px solid #00F0FF;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.lang-btn.tw:hover {
+    background-color: #1E293B;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.8);
+}
+
+/* 簡體中文：霓虹粉按鈕 */
+.lang-btn.cn {
+    background-color: #0F172A;
+    color: #FF2E93;
+    border: 2px solid #FF2E93;
+    box-shadow: 0 0 10px rgba(255, 46, 147, 0.4);
+}
+
+.lang-btn.cn:hover {
+    background-color: #1E293B;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255, 46, 147, 0.8);
+}
